@@ -1,0 +1,130 @@
+body {
+  font-family: 'Share Tech Mono', monospace;
+}
+header {
+  background: gray;
+  padding: 20px 0;
+}
+
+.caixa{
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav{
+  position: absolute;
+  top: 110px;
+  right: 0px;
+}
+
+nav li{
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav li a {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(77, 53, 26);
+  transition: 400ms;
+  font-size: 35px;
+}
+
+.produtos{
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.produtos li{
+  background: gray;
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.produtos li:hover{
+  color: black;
+  border-color: gray;
+  background:rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.produtos li:active{
+  border-color: rgb(0, 0, 0);
+  visibility: visible;
+}
+
+.produtos li:hover h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+.produto-descricao{
+  font-size: 18px;
+  font-weight: bold;
+} 
+
+.produto-preco{
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  background: gray;
+  padding: 40px 0;
+}
+
+.copy {
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 1024px){
+  .caixa{
+    width: auto;
+  }
+  
+  .principal .footer{
+    width: auto;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  nav{
+    position: static;
+    text-align: center;
+  }
+
+  
+  @media screen and (max-width: 768px){
+    .produtos{
+      width: 100%;
+      text-align: center;
+    }
+
+    .produtos li{
+      width: 90%;
+      margin: auto;
+      display: block;
+      margin-top: 15px;
+    }
+  }
+}

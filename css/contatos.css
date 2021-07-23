@@ -1,0 +1,230 @@
+body {
+  font-family: 'Share Tech Mono', monospace;
+}
+header {
+  background: gray;
+  padding: 20px 0;
+}
+
+.caixa{
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav{
+  position: absolute;
+  top: 110px;
+  right: 0px;
+}
+
+nav li{
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav li a {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(77, 53, 26);
+  transition: 400ms;
+  font-size: 35px;
+}
+
+main{
+  width: 100%;
+  text-align: center;
+}
+
+form{
+  display: inline-block;
+  width: 100%;
+}
+
+label{
+  display: block;
+  font-size: 25px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.fieldset-horario{
+  margin: 25px 0 10px;
+}
+
+select{
+  margin: 10px;
+  font-size: 18px;
+  width: 20%;
+}
+
+
+.input-padrao{
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 25%;
+}
+
+.checkbox{
+ margin-top: 10px 0 30px;
+}
+
+.enviar{
+  width: 100%;
+  padding: 15px 0;
+  background: rgb(117, 117, 117);
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+  text-align: center;
+}
+
+.enviar:hover{
+  background: rgb(60, 0, 255);
+  color: rgb(248, 248, 248);
+  transition: 1s;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8);
+
+background-size: 1800% 1800%;
+
+
+
+-webkit-animation: rainbow 12s ease infinite;
+
+-z-animation: rainbow 9s ease infinite;
+
+-o-animation: rainbow 9s ease infinite;
+
+  animation: rainbow 9s ease infinite;}
+
+
+
+@-webkit-keyframes rainbow {
+
+    0%{background-position:0% 82%}
+
+    50%{background-position:100% 19%}
+
+    100%{background-position:0% 82%}
+
+}
+
+@-moz-keyframes rainbow {
+
+    0%{background-position:0% 82%}
+
+    50%{background-position:100% 19%}
+
+    100%{background-position:0% 82%}
+
+}
+
+@-o-keyframes rainbow {
+
+    0%{background-position:0% 82%}
+
+    50%{background-position:100% 19%}
+
+    100%{background-position:0% 82%}
+
+}
+
+@keyframes rainbow { 
+
+    0%{background-position:0% 82%}
+
+    50%{background-position:100% 19%}
+
+    100%{background-position:0% 82%}
+
+}
+
+table{
+  margin: 20px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+thead{
+  background: gray;
+  color: white;
+  font-weight: bold;
+}
+
+td, th{
+  border: 1px solid black;
+  padding: 8px 15px;
+}
+
+footer {
+  text-align: center;
+  background: gray;
+  padding: 40px 0;
+}
+
+.copy {
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 1024px){
+  .caixa{
+    width: auto;
+  }
+  
+  .principal .footer{
+    width: auto;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  nav{
+    position: static;
+    text-align: center;
+  }
+  .input-padrao{
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .input-padrao{
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .input-padrao{
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+  }
+
+  .enviar{
+    width: 70%;
+  }
+} 
+
+@media screen and (max-width: 3px){
+  .input-padrao{
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+  }
+}

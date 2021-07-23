@@ -1,0 +1,175 @@
+body {
+  font-family: 'Share Tech Mono', monospace;
+}
+header {
+  background: rgb(77, 53, 26);
+  padding: 20px 0;
+}
+
+.caixa {
+  background: rgb(77, 53, 26);
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav li a {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(255, 255, 255);
+  transition: 400ms;
+  font-size: 35px;
+}
+
+.banner {
+  width: 100%;
+}
+
+.principal p {
+  margin: 0 0 1rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.principal strong {
+  font-weight: bold;
+}
+
+.principal {
+  background: rgb(77, 53, 26);
+  padding: 3rem;
+  width: 94%;
+  margin: 0 auto;
+}
+
+.utensilios {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 1rem;
+  clear: left;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+.titulo-principal:before {
+  content: ' 💈 ';
+}
+
+.titulo-principal:after {
+  content: ' 💈 ';
+}
+
+.missao {
+  font-size: 20px;
+}
+
+.mapa {
+  padding: 1rem 0;
+  background: linear-gradient(rgb(77, 53, 26), white);
+}
+
+.mapa p {
+  text-align: center;
+  margin: 0 0 2rem;
+}
+
+.beneficios {
+  background: rgb(77, 53, 26);
+  padding: 20px;
+}
+
+.conteudo-beneficios {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.lista-beneficios {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.lista-beneficios li {
+  text-align: center;
+  font-style: italic;
+  line-height: 2;
+  font-size: 20px;
+  color: black;
+}
+
+.lista-beneficios li::before {
+  content: '✂️  ';
+}
+
+.img-beneficios {
+  width: 55%;
+  opacity: 1;
+  transition: 400ms;
+  box-shadow: 10px 10px 10px #000;
+}
+
+.img-beneficios:hover {
+  opacity: 0.3;
+}
+
+.video {
+  width: 500px;
+  margin: 100px auto;
+}
+
+footer {
+  text-align: center;
+  background: rgb(77, 53, 26);
+  padding: 40px 0;
+}
+
+.copy {
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 1024px){
+  .caixa, .principal, .conteudo-beneficios, .video{
+    width: auto;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  .titulo-principal{
+    font-size: 22px;
+  }
+
+  nav{
+    position: static;
+    text-align: center;
+  }
+
+  .lista-beneficios, .img-beneficios{
+    width: 100%;
+  }
+}
